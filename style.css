@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+    text-align: center;
+}
+
+/* header section */
+
+.header {
+    display: flex;
+    height: 5rem;
+    margin: 0 2rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header img {
+    width: 100px;
+}
+
+/* main section */
+main .info-content {
+    margin: 3.5rem 2rem;
+}
+
+.info-content h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    line-height: 1.1;
+}
+
+h1 span {
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+
+.info-content .info {
+    margin: 1.25rem 0;
+    font-size: 0.875rem;
+    color: hsl(0, 36%, 70%);
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+/* form section */
+
+form {
+    position: relative;
+    animation: 0.5s slideinleft ease 0.7s forwards;
+}
+
+.input {
+    padding: 1rem 1.5rem;
+    font-family: inherit;
+    border-radius: 100px;
+    border: 1px solid hsl(0, 36%, 70%);
+    width: 100%;
+    opacity: 0.5;
+}
+
+.submit {
+    border: none;
+    background: url(images/icon-arrow.svg) center, linear-gradient(135deg, #F8BFBF 37.5%, rgba(238, 140, 140, 0.74) 100%); background-repeat: no-repeat;
+    width: 20%;
+    position: absolute;
+    right: 0.5rem;
+    height: 100%;
+    top: 0;
+    right: 0;
+    border-radius: 100px;
+    box-shadow: 0px 2px 4px rgba(47, 56, 66, 0.25);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.error-icon {
+    position: absolute;
+    right: 0.5rem;
+    height: 100%;
+    top: 20%;
+    right: 22%;
+    width: 25px;
+    height: 25px;
+    visibility: hidden;
+}
+
+.show-error-icon {
+    visibility: visible;
+}
+
+.email-alert {
+    padding: 0.75rem 1.5rem;
+    color: hsl(0, 93%, 68%);
+    opacity: 0.8;
+    visibility: hidden;
+}
+
+.show-email-alert {
+    visibility: visible;
+}
+
+.hero-img-desktop {
+    display: none;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+
+
+@media(min-width: 728px) {
+
+    body {
+        max-width: 1440px;
+        margin: 0 auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    footer {
+        position: absolute;
+        top: 98%;
+    }
+
+
+    main {
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        background: url(./images/bg-pattern-desktop.svg) no-repeat center center / cover;
+    }
+
+    header, .info-content {
+        width: 480px;
+        padding-top: 50px;
+        padding-left: 100px
+    }
+
+    .header img {
+        width: 120px;
+    }
+
+    .info-content h1 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        line-height: 1.2;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-img-desktop {
+        display: block;
+        grid-area: 1 / 8 / 12 / 12;
+    }
+
+    .header {
+        grid-area: 1 / 1 / 2 / 8;
+    }
+
+    .info-content {
+        grid-area: 2 / 1 / 12 / 8;
+    }
+}
+
+
+
