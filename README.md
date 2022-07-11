@@ -19,8 +19,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My Solution](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [My Solution](https://github.com/Aditi002-holo/base-apparel-page)
+- [Solution URL](https://aditi002-holo.github.io/base-apparel-page/)
 
 ### Built with
 
